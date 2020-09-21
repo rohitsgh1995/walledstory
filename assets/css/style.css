@@ -1,25 +1,32 @@
-body {background-color: #fff; min-height: 100%; padding: 5vh; display: flex; flex-direction: row;}
+body {background-color: #fff; min-height: 100%; margin:0; padding: 5vh; display: flex; flex-direction: row;}
+
 
 a{text-decoration: none;}
 
-label{font-size: 1.2em; font-weight: 600;}
+
+label{font-size: 1rem; font-weight: 600;}
+
 
 .main-box{background-color: #fef5e4; width: calc(100% - 5vh); min-height: calc(100vh - 10vh); max-height: calc(100vh - 10vh); display: flex; flex-direction: column; 
             border-radius: 30px 0 0 30px;}
 
+
 .side-main-box{background-color: #000; width: 6vh; min-height: calc(100vh - 10vh); max-height: calc(100vh - 10vh); border-radius: 0 30px 30px 0;}
+
 
 .main-header{padding: 3vh 3vh 6.5vh 3vh; display: flex; flex-direction: row;}
 .main-header .main-header-left, .main-header .main-header-right{width: 50%; display: inline-flex;}
-.main-header .main-header-right{width: 50%; display: inline-flex; justify-content: right;}
+.main-header .main-header-right{width: 50%; display: inline-flex; justify-content: flex-end;}
 .main-header .main-header-left .main-header-dot{height: 30px; width: 30px; border-radius: 50%; background-color: #5164cb;}
 .main-header .main-header-left .main-header-image{margin-left: 1.5vh;}
-.main-header .main-header-left .main-header-image a img{width: 300px}
+.main-header .main-header-left .main-header-image a img{height: 3vh}
 .main-header .main-header-right .main-header-logout{display: flex; justify-content: center; flex-flow: column; margin-right: 3vh;}
 .main-header .main-header-right .main-header-logout a{text-decoration: none; font-size: 1em; color: #000;}
 .main-header .main-header-right .main-header-dp a img{height: 50px; width: 50px; border-radius: 50%;}
 
+
 .box{min-height: calc(100vh - (12vh + 30px + 10vh)); overflow: hidden;}
+
 
 .box .box-1, .box .box-3{width: 22%; min-height: 100%; max-height: 100%; border-radius: 0 0 0 30px;}
 .box .box-2{width: 56%; height: 100%; overflow-inline: scroll; overflow-x: hidden;}
@@ -28,16 +35,30 @@ label{font-size: 1.2em; font-weight: 600;}
 /* Hide scrollbar for Firefox */
 .box .box-2 {-ms-overflow-style: none; scrollbar-width: none;}
 
+
 .left-side-bar{width: 60%; background-color: #7c88d2; height: 100%; border-radius: 0 30px 0 30px;}
+.left-side-bar .side-bar-dp{padding: 3vh 0;}
+.left-side-bar .side-bar-dp img{width: 75%; border-radius: 50%; margin-bottom: 1vh}
+.left-side-bar .side-bar-dp span{font-size: 1.5rem; font-weight: 600; color: #000; text-shadow: 1px 1px 2px #00000094;}
+.left-side-bar .side-bar-menu-list{display: flex; flex-direction: column;}
+.left-side-bar .side-bar-menu-list .side-bar-menu-list-item{display: flex; flex-direction: row; font-size: 0.8rem; color: #fff; padding: 1vh 1vh; cursor: pointer}
+.left-side-bar .side-bar-menu-list .side-bar-menu-list-item:hover{background-color: #848fd7; border-radius: 15px;}
+.left-side-bar .side-bar-menu-list .active{background-color: #848fd7; border-radius: 15px;}
+.left-side-bar .side-bar-menu-list .side-bar-menu-list-item span{width: 30px; text-align: center;}
+.left-side-bar .side-bar-menu-list .side-bar-menu-list-item span i{font-size: 0.8rem;}
+
 
 .right-side-bar{float: right; margin-right: 1vh; width: 60%; background-color: #18191b; height: 100%; border-radius: 30px;}
+.right-side-bar .right-side-bar-items{display: flex; flex-direction: column; padding: 1vh; text-align: center; color: #fff; font-size: 0.8rem; font-weight: 500;}
+.right-side-bar .right-side-bar-items .right-side-bar-items-title{margin-bottom: 2vh;}
+.right-side-bar .right-side-bar-items .section-selection{position: relative; display: flex; flex-direction: column; padding:0.5vh}
+.right-side-bar .right-side-bar-items .section-selection .section-image img{height: 12vh; border-radius: 15px; margin-bottom: 0.7vh;}
 
 
 .stories{padding: 1vh; display: flex; overflow: hidden; margin-bottom: 3vh;}
 .stories .story-box{min-width: 8vw; max-width: 8vw; text-align: center; border-radius: 20px; margin-right: 2vh;}
 .stories .story-box img{width: 100%; border-radius: 20px;}
 .stories .story-box span{font-size: 0.9em;}
-
 
 
 .posts{padding: 3vh 1vh 3vh 1vh; background-color: #feeecd; display: flex; border-radius: 20px 20px 0 0;}
@@ -50,8 +71,8 @@ label{font-size: 1.2em; font-weight: 600;}
 
 
 .current-posts{padding: 0 3vh 0 3vh; background-color: #feeecd; display: flex;}
-.current-posts .active-posts{width: 100%; background-color: #18191b; border-radius: 20px; padding: 3vh 2vh 3vh 2vh; display: flex; flex-direction: row; margin-bottom: 2vh;}
-.current-posts .active-posts img{min-width: 5vh; min-height: 5vh; max-width: 5vh; max-height: 5vh; border-radius: 50%;}
+.current-posts .active-posts{width: 100%; background-color: #18191b; border-radius: 20px; padding: 3vh; display: flex; flex-direction: row; margin-bottom: 2vh;}
+.current-posts .active-posts .posts-owner-dp{min-width: 5vh; min-height: 5vh; max-width: 5vh; max-height: 5vh; border-radius: 50%;}
 /* .current-posts .active-posts .active-posts .active-post-content{padding: 2vh;} */
 .current-posts .active-posts .active-post-content .active-post-content-header{display: flex; flex-direction: row; padding-left: 2vh; margin-bottom: 2vh}
 .current-posts .active-posts .active-post-content .active-post-content-header .info, 
@@ -62,8 +83,9 @@ label{font-size: 1.2em; font-weight: 600;}
 .current-posts .active-posts .active-post-content .active-post-content-header .three-dots div{height: 0.6vh; width: 0.6vh; margin-left: 99%; margin-bottom: 0.24vh; 
     border-radius: 50%; background-color: #5164cb;}
 .current-posts .active-posts .active-post-content .active-post-content-body{display: flex; flex-direction: column; padding-left: 2vh; color: #fff;}
+.current-posts .active-posts .active-post-content .active-post-content-body .content-body-image{width: 100%; border-radius: 20px; margin-bottom: 1vh;}
 .current-posts .active-posts .active-post-content .active-post-content-body p{font-size: 0.9em;}
-.current-posts .active-posts .active-post-content .active-post-content-footer{display: flex; flex-direction: row; flex-flow: row; justify-content: right;}
+.current-posts .active-posts .active-post-content .active-post-content-footer{display: flex; flex-flow: row; justify-content: flex-end;}
 .current-posts .active-posts .active-post-content .active-post-content-footer a{color: #5164cb; font-size: 1.3em; margin-left: 2vh;}
 .current-posts .active-posts .active-post-content .active-post-content-footer .liked{color: #dd3737;}
 
