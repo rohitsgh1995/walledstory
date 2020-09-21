@@ -1,9 +1,6 @@
 body {background-color: #fff; min-height: 100%; margin:0; padding: 5vh; display: flex; flex-direction: row;}
 
 
-a{text-decoration: none;}
-
-
 label{font-size: 1rem; font-weight: 600;}
 
 
@@ -49,10 +46,15 @@ label{font-size: 1rem; font-weight: 600;}
 
 
 .right-side-bar{float: right; margin-right: 1vh; width: 60%; background-color: #18191b; height: 100%; border-radius: 30px;}
-.right-side-bar .right-side-bar-items{display: flex; flex-direction: column; padding: 1vh; text-align: center; color: #fff; font-size: 0.8rem; font-weight: 500;}
+.right-side-bar .right-side-bar-items{display: flex; flex-direction: column; padding: 1vh; text-align: center; color: #fff; font-size: 0.85rem; font-weight: 600;}
 .right-side-bar .right-side-bar-items .right-side-bar-items-title{margin-bottom: 2vh;}
-.right-side-bar .right-side-bar-items .section-selection{position: relative; display: flex; flex-direction: column; padding:0.5vh}
-.right-side-bar .right-side-bar-items .section-selection .section-image img{height: 12vh; border-radius: 15px; margin-bottom: 0.7vh;}
+.right-side-bar .right-side-bar-items .section-selection{display: flex; flex-direction: column;}
+.right-side-bar .right-side-bar-items .section-selection span{margin-bottom: 0.7vh;}
+.right-side-bar .right-side-bar-items .section-selection .section-image{position: relative; width: 100%; border-radius: 15px; margin-bottom: 0.7vh;}
+.right-side-bar .right-side-bar-items .section-selection .section-image img{width: 80%; border-radius: 15px;}
+.right-side-bar .right-side-bar-items .section-selection .section-image .image-overlay{background: rgba(0,0,0,0.7); position: absolute; width: 80.5%; height: 100%; top: 51%; 
+        left: 51%; transform: translate(-51%, -51%); border-radius: 15px;}
+.right-side-bar-items .see-more{margin-top: 2.5vh; font-size: 1rem; font-weight: 700; color: #fff; text-decoration: none;}
 
 
 .stories{padding: 1vh; display: flex; overflow: hidden; margin-bottom: 3vh;}
