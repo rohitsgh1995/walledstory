@@ -1,24 +1,24 @@
 body {background-color: #fff; min-height: 100%; margin:0; padding: 5vh; display: flex; flex-direction: row;}
 
 
-label{font-size: 1rem; font-weight: 600;}
+label{font-size: 1rem; font-weight: 600; color: #fff;}
 
 
-.main-box{background-color: #fef5e4; width: calc(100% - 5vh); min-height: calc(100vh - 10vh); max-height: calc(100vh - 10vh); display: flex; flex-direction: column; 
+.main-box{background-color: #000; width: calc(100% - 5vh); min-height: calc(100vh - 10vh); max-height: calc(100vh - 10vh); display: flex; flex-direction: column; 
             border-radius: 30px 0 0 30px;}
 
 
-.side-main-box{background-color: #000; width: 6vh; min-height: calc(100vh - 10vh); max-height: calc(100vh - 10vh); border-radius: 0 30px 30px 0;}
+.side-main-box{background-color: #c6d6cc; width: 6vh; min-height: calc(100vh - 10vh); max-height: calc(100vh - 10vh); border-radius: 0 30px 30px 0;}
 
 
 .main-header{padding: 3vh 3vh 6.5vh 3vh; display: flex; flex-direction: row;}
 .main-header .main-header-left, .main-header .main-header-right{width: 50%; display: inline-flex;}
 .main-header .main-header-right{width: 50%; display: inline-flex; justify-content: flex-end;}
-.main-header .main-header-left .main-header-dot{height: 30px; width: 30px; border-radius: 50%; background-color: #5164cb;}
+.main-header .main-header-left .main-header-dot{height: 30px; width: 30px; border-radius: 50%; background-color: #082744;}
 .main-header .main-header-left .main-header-image{margin-left: 1.5vh;}
-.main-header .main-header-left .main-header-image a img{height: 3vh}
+.main-header .main-header-left .main-header-image a img{height: 3vh; filter: brightness(0) invert(1); -webkit-filter: brightness(0) invert(1); -webkit-transition: all ease-in-out;}
 .main-header .main-header-right .main-header-logout{display: flex; justify-content: center; flex-flow: column; margin-right: 3vh;}
-.main-header .main-header-right .main-header-logout a{text-decoration: none; font-size: 1em; color: #000;}
+.main-header .main-header-right .main-header-logout a{text-decoration: none; font-size: 1em; color: #fff;}
 .main-header .main-header-right .main-header-dp a img{height: 50px; width: 50px; border-radius: 50%;}
 
 
@@ -33,14 +33,14 @@ label{font-size: 1rem; font-weight: 600;}
 .box .box-2 {-ms-overflow-style: none; scrollbar-width: none;}
 
 
-.left-side-bar{width: 60%; background-color: #7c88d2; height: 100%; border-radius: 0 30px 0 30px;}
+.left-side-bar{width: 60%; background-color: #082744; height: 100%; border-radius: 0 30px 0 30px;}
 .left-side-bar .side-bar-dp{padding: 3vh 0;}
 .left-side-bar .side-bar-dp img{width: 75%; border-radius: 50%; margin-bottom: 1vh}
-.left-side-bar .side-bar-dp span{font-size: 1.5rem; font-weight: 600; color: #000; text-shadow: 1px 1px 2px #00000094;}
+.left-side-bar .side-bar-dp span{font-size: 1.5rem; font-weight: 600; color: #fff; text-shadow: 1px 1px 2px #f9f9f9d9;}
 .left-side-bar .side-bar-menu-list{display: flex; flex-direction: column;}
 .left-side-bar .side-bar-menu-list .side-bar-menu-list-item{display: flex; flex-direction: row; font-size: 0.8rem; color: #fff; padding: 1vh 1vh; cursor: pointer}
-.left-side-bar .side-bar-menu-list .side-bar-menu-list-item:hover{background-color: #848fd7; border-radius: 15px;}
-.left-side-bar .side-bar-menu-list .active{background-color: #848fd7; border-radius: 15px;}
+.left-side-bar .side-bar-menu-list .side-bar-menu-list-item:hover{background-color: #0e3355; border-radius: 15px;}
+.left-side-bar .side-bar-menu-list .active{background-color: #0e3355; border-radius: 15px;}
 .left-side-bar .side-bar-menu-list .side-bar-menu-list-item span{width: 30px; text-align: center;}
 .left-side-bar .side-bar-menu-list .side-bar-menu-list-item span i{font-size: 0.8rem;}
 
@@ -57,12 +57,12 @@ label{font-size: 1rem; font-weight: 600;}
 .right-side-bar .right-side-bar-items .section-selection .section-image .image-overlay i{position: relative; top: 40%; font-size: 1.5em;}
 .right-side-bar-items .see-more{margin-top: 1vh; font-size: 0.8rem; font-weight: 700; color: #fff; text-decoration: none;}
 .right-side-bar .right-side-bar-switch .right-side-bar-switch-title{display: flex; flex-direction: row; padding: 0.5vh; text-align: left; color: #fff; font-size: 1rem; font-weight: 600;}
-.right-side-bar .right-side-bar-switch .right-side-bar-switch-title .title-dot{position: relative; height: 20px; width: 20px; margin-right: 10px; padding: 13px; border-radius: 50%; background-color: #5164cbab;}
+.right-side-bar .right-side-bar-switch .right-side-bar-switch-title .title-dot{position: relative; height: 20px; width: 20px; margin-right: 10px; padding: 13px; border-radius: 50%; background-color: #082744ab;}
 .right-side-bar .right-side-bar-switch .right-side-bar-switch-title .title-dot .title-inner-dot{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 1.5vh; width: 1.5vh; margin-right: 10px; border-radius: 50%; background-color: #18191b;}
 .right-side-bar-switch-body .right-side-bar-switch-body-items ul{list-style-type: none; margin-top: 1vh;}
 .right-side-bar-switch-body .right-side-bar-switch-body-items ul li{display: flex; flex-direction: column; position: relative; padding-left: 5px; margin-bottom: 1vh;}
 .right-side-bar-switch-body .right-side-bar-switch-body-items ul li:before{content: ""; display: block; position: absolute; left: -1.2vw; width: 2vh; height: 2vh; 
-        border: 3px solid #848fd7; background: #848fd7; border-radius: 50%; box-shadow: 0px 0px 0px 3px #18191b inset;}
+        border: 3px solid #0e3355; background: #0e3355; border-radius: 50%; box-shadow: 0px 0px 0px 3px #18191b inset;}
 .right-side-bar-switch-body .right-side-bar-switch-body-items ul li img{width: 100%;}
 .right-side-bar-switch-body .right-side-bar-switch-body-items ul li span{color: #fff; font-size: 0.55rem; font-weight: 600;}
 
@@ -72,19 +72,19 @@ label{font-size: 1rem; font-weight: 600;}
 .stories{padding: 1vh; display: flex; overflow: hidden; margin-bottom: 3vh;}
 .stories .story-box{min-width: 8vw; max-width: 8vw; text-align: center; border-radius: 20px; margin-right: 2vh;}
 .stories .story-box img{width: 100%; border-radius: 20px;}
-.stories .story-box span{font-size: 0.9em;}
+.stories .story-box span{font-size: 0.9em; color: #fff;}
 
 
-.posts{padding: 3vh 1vh 3vh 1vh; background-color: #feeecd; display: flex; border-radius: 20px 20px 0 0;}
-.posts .post-box{width: 100%; background-color: #e2d3b6; border-radius: 20px; display: flex; flex-direction: row; padding: 1.5vh;}
+.posts{padding: 3vh 1vh 3vh 1vh; background-color: #000; display: flex; border-radius: 20px 20px 0 0;}
+.posts .post-box{width: 100%; background-color: #18191b; border-radius: 20px; display: flex; flex-direction: row; padding: 1.5vh;}
 .posts .post-box img{width: 5vh; height: 5vh; border-radius: 50%;}
 .posts .post-box form{width: 100%; padding: 0 0 0 1vh;}
 .posts .post-box form textarea{background-color: transparent; border-color: transparent;}
-.posts .post-box form textarea::placeholder{font-size: 1em; font-weight: 700; color: #000;}
-.posts .post-box form button{cursor: pointer; font-size: 1em; background-color: #7c88d2; font-weight: 600; border-color: #7c88d2;}
+.posts .post-box form textarea::placeholder{font-size: 1em; font-weight: 700; color: #fff;}
+.posts .post-box form button{cursor: pointer; font-size: 1em; background-color: #082744; font-weight: 600; border-color: #082744;}
 
 
-.current-posts{padding: 0 3vh 0 3vh; background-color: #feeecd; display: flex;}
+.current-posts{padding: 0 3vh 0 3vh; background-color: #000; display: flex;}
 .current-posts .active-posts{width: 100%; background-color: #18191b; border-radius: 20px; padding: 3vh; display: flex; flex-direction: row; margin-bottom: 2vh;}
 .current-posts .active-posts .posts-owner-dp{min-width: 5vh; min-height: 5vh; max-width: 5vh; max-height: 5vh; border-radius: 50%;}
 /* .current-posts .active-posts .active-posts .active-post-content{padding: 2vh;} */
@@ -95,12 +95,12 @@ label{font-size: 1rem; font-weight: 600;}
 .current-posts .active-posts .active-post-content .active-post-content-header .info span{color: #fff; font-size: 0.7em}
 .current-posts .active-posts .active-post-content .active-post-content-header .three-dots{display: flex; flex-direction: column; float: right;}
 .current-posts .active-posts .active-post-content .active-post-content-header .three-dots div{height: 0.6vh; width: 0.6vh; margin-left: 99%; margin-bottom: 0.24vh; 
-    border-radius: 50%; background-color: #5164cb;}
+    border-radius: 50%; background-color: #fff;}
 .current-posts .active-posts .active-post-content .active-post-content-body{display: flex; flex-direction: column; padding-left: 2vh; color: #fff;}
 .current-posts .active-posts .active-post-content .active-post-content-body .content-body-image{width: 100%; border-radius: 20px; margin-bottom: 1vh;}
 .current-posts .active-posts .active-post-content .active-post-content-body p{font-size: 0.9em;}
 .current-posts .active-posts .active-post-content .active-post-content-footer{display: flex; flex-flow: row; justify-content: flex-end;}
-.current-posts .active-posts .active-post-content .active-post-content-footer a{color: #5164cb; font-size: 1.3em; margin-left: 2vh;}
+.current-posts .active-posts .active-post-content .active-post-content-footer a{color: #fff; font-size: 1.3em; margin-left: 2vh;}
 .current-posts .active-posts .active-post-content .active-post-content-footer .liked{color: #dd3737;}
 
 
@@ -114,6 +114,6 @@ label{font-size: 1rem; font-weight: 600;}
 
 .side-main-box .row{display: inline;}
 .side-main-box .row .search-button, .side-main-box .row .option-button, .side-main-box .row .toggle-button{height: 32%}
-.side-main-box .row .search-button a i{position: absolute; font-size: 1.5rem; color: #fff; left: 50%; top: 10%; transform: translate(-50%, -50%);}
-.side-main-box .row .option-button a i{position: absolute; font-size: 1.5rem; color: #fff; top: 50%; transform: translate(-50%);}
-.side-main-box .row .toggle-button a i{position: absolute; font-size: 1.5rem; color: #fff; bottom: 25%; transform: translate(-50%);}
+.side-main-box .row .search-button a i{position: absolute; font-size: 1.5rem; color: #000; left: 50%; top: 10%; transform: translate(-50%, -50%);}
+.side-main-box .row .option-button a i{position: absolute; font-size: 1.5rem; color: #000; top: 50%; transform: translate(-50%);}
+.side-main-box .row .toggle-button a i{position: absolute; font-size: 1.5rem; color: #000; bottom: 25%; transform: translate(-50%);}
