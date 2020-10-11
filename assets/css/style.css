@@ -1,8 +1,10 @@
 body {background-color: #fff; min-height: 100%; margin:0; padding: 5vh; display: flex; flex-direction: row;}
 
+/***** ***** ***** ***** ***** Index Page ***** ***** ***** ***** *****/
 
 label{font-size: 1rem; font-weight: 600;}
 
+/***** ***** Main Box ***** *****/
 
 .main-box{background-color: #fef5e4; width: calc(100% - 5vh); min-height: calc(100vh - 10vh); max-height: calc(100vh - 10vh); display: flex; flex-direction: column; 
             border-radius: 30px 0 0 30px;}
@@ -10,6 +12,9 @@ label{font-size: 1rem; font-weight: 600;}
 
 .side-main-box{background-color: #000; width: 6vh; min-height: calc(100vh - 10vh); max-height: calc(100vh - 10vh); border-radius: 0 30px 30px 0;}
 
+/***** ***** Main Box End ***** *****/
+
+/***** ***** Header ***** *****/
 
 .main-header{padding: 3vh 3vh 6.5vh 3vh; display: flex; flex-direction: row;}
 .main-header .main-header-left, .main-header .main-header-right{width: 50%; display: inline-flex;}
@@ -21,16 +26,25 @@ label{font-size: 1rem; font-weight: 600;}
 .main-header .main-header-right .main-header-logout a{text-decoration: none; font-size: 1em; color: #000;}
 .main-header .main-header-right .main-header-dp a img{height: 50px; width: 50px; border-radius: 50%;}
 
+/***** ***** Header End ***** *****/
+
+/***** ***** Box ***** *****/
 
 .box{min-height: calc(100vh - (12vh + 30px + 10vh)); overflow: hidden;}
 
+/***** Left Box & Right Box *****/
 
 .box .box-1, .box .box-3{width: 22%; min-height: 100%; max-height: 100%; border-radius: 0 0 0 30px;}
-.box .box-2{width: 56%; height: 100%; overflow-inline: scroll; overflow-x: hidden;}
-/* Hide scrollbar for Chrome, Safari and Opera */
-.box .box-2::-webkit-scrollbar{display: none;}
-/* Hide scrollbar for Firefox */
+
+/***** Left Box & Right Box End *****/
+
+/***** Middle Box *****/
+.box .box-2{width: 56%; height: 100%; overflow-inline: scroll; overflow-x: hidden;} /* Hide scrollbar for Chrome, Safari and Opera */
+.box .box-2::-webkit-scrollbar{display: none;} /* Hide scrollbar for Firefox */
 .box .box-2 {-ms-overflow-style: none; scrollbar-width: none;}
+
+/***** Middle Box End *****/
+
 
 
 .left-side-bar{width: 60%; background-color: #7c88d2; height: 100%; border-radius: 0 30px 0 30px;}
@@ -117,3 +131,35 @@ label{font-size: 1rem; font-weight: 600;}
 .side-main-box .row .search-button a i{position: absolute; font-size: 1.5rem; color: #fff; left: 50%; top: 10%; transform: translate(-50%, -50%);}
 .side-main-box .row .option-button a i{position: absolute; font-size: 1.5rem; color: #fff; top: 50%; transform: translate(-50%);}
 .side-main-box .row .toggle-button a i{position: absolute; font-size: 1.5rem; color: #fff; bottom: 25%; transform: translate(-50%);}
+
+/***** ***** ***** ***** ***** Index Page End ***** ***** ***** ***** *****/
+
+
+
+
+/***** ***** ***** ***** ***** Login Page ***** ***** ***** ***** *****/
+
+.l-body{background-color: #000;}
+
+.l-main-box{background-color: #fff; width: calc(100%); min-height: calc(100vh - 10vh); max-height: calc(100vh - 10vh); display: flex; flex-direction: column; 
+        border-radius: 30px;}
+
+.l-box{min-height: calc(100vh - (10vh)); overflow: hidden;}
+
+.l-box .l-box-1, .l-box .l-box-2{width: 50%; min-height: 100%; max-height: 100%; border-radius: 0 30px 30px 0;}
+
+
+.l-box .l-box-2{ background-image: url('../files/login-bg.jpg'); background-position: top; background-repeat: no-repeat; background-size: cover;}
+
+
+
+
+.l-header{display: flex; flex-direction: row; padding-top: 5vh; padding-bottom: 5vh; width: 100%;}
+
+.l-header .l-header-dot{position: relative; height: 9vh; width: 9vh; border-radius: 50%; background-color: #0f6ccb;}
+.l-header .l-header-dot .l-header-inner-dot{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 6vh; width: 6vh; border-radius: 50%; background-color: #fff;}
+
+.l-header .l-header-logo{width: calc(100% - 9vh);}
+.l-header .l-header-logo img{width: 100%;}
+
+/***** ***** ***** ***** ***** Login Page End ***** ***** ***** ***** *****/
