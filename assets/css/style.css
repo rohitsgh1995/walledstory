@@ -149,17 +149,36 @@ label{font-size: 1rem; font-weight: 600;}
 .l-box .l-box-1, .l-box .l-box-2{width: 50%; min-height: 100%; max-height: 100%; border-radius: 0 30px 30px 0;}
 
 
-.l-box .l-box-2{ background-image: url('../files/login-bg.jpg'); background-position: top; background-repeat: no-repeat; background-size: cover;}
+.l-box .l-box-2{position: relative; background-image: url('../files/login-bg.jpg'); background-position: top; background-repeat: no-repeat; background-size: cover;}
 
 
 
 
-.l-header{display: flex; flex-direction: row; padding-top: 5vh; padding-bottom: 5vh; width: 100%;}
+.l-header{display: flex; flex-direction: row; padding: 10vh 7vh 9vh 7vh; width: 100%;}
 
-.l-header .l-header-dot{position: relative; height: 9vh; width: 9vh; border-radius: 50%; background-color: #0f6ccb;}
-.l-header .l-header-dot .l-header-inner-dot{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 6vh; width: 6vh; border-radius: 50%; background-color: #fff;}
+.l-header .l-header-dot{position: relative; height: 7vh; width: 7vh; border-radius: 50%; background-color: #0f6ccb;}
+.l-header .l-header-dot .l-header-inner-dot{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 5vh; width: 5vh; border-radius: 50%; background-color: #fff;}
 
-.l-header .l-header-logo{width: calc(100% - 9vh);}
-.l-header .l-header-logo img{width: 100%;}
+.l-header .l-header-logo{position: relative; width: calc(100% - 9vh);}
+.l-header .l-header-logo a img{position: absolute; top: 50%; width: 85%; transform: translate(3%, -45%);}
+
+
+.l-form span{font-size: 1.8em; font-weight: 600;}
+.l-form-fields form{padding: 7% 18%;}
+.l-form-fields form label{font-size: 1.5em; color: #000;}
+.l-form-fields form input{height: 6vh; margin-bottom: 4vh; border-radius: 10px;}
+.l-form-fields form input::placeholder{font-size: 1.2em;}
+.l-form-fields form input:focus{border-color: #000;}
+.l-form-fields form button{background-color: #0f6ccb; cursor: pointer; font-size: 1.5em; width: 100%; border-radius: 10px;}
+.l-form-fields p{font-size: 1.2em;}
+.l-form-fields p a{text-decoration: none;}
+.l-form-fields p a b{color: #000; font-weight: 600;}
+
+
+
+.l-read-more{position: absolute; bottom: 2%; left: 50%; transform: translate(-50%);}
+.l-read-more a{text-decoration: none; display: flex; flex-direction: column;}
+.l-read-more a i{font-size: 5em; color: #0f6ccb;}
+.l-read-more a span{font-size: 1.4em; color: #fff; letter-spacing: 0.5px;}
 
 /***** ***** ***** ***** ***** Login Page End ***** ***** ***** ***** *****/
