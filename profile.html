@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WalledStory</title>
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style-dark-mode.css">
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Main Box -->
+    <div class="container main-box">
+
+        <div class="row">
+            <!-- Header -->
+            <div class="col-12 main-header">
+                <div class="main-header-left">
+                    <div class="main-header-dot"></div>
+                    <div class="main-header-image">
+                        <a href="./"><img src="assets/files/ws-logo.png" alt="WalledStory-logo"></a>
+                    </div>
+                </div>
+                <div class="main-header-right">
+                    <div class="main-header-logout">
+                        <label><a href="#">Logout</a></label>
+                    </div>
+                    <div class="main-header-dp">
+                        <a href="#"><img src="assets/files/profile/profile1.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Header End -->
+        </div>
+
+        <div class="row box">
+
+            <!-- Left box -->
+            <div class="box-1">
+
+                <!-- Left sidebar -->
+                <div class="pro-left-side-bar">
+                    <!-- Profile Picture -->
+                    <div class="side-bar-dp text-center">
+                        <img src="assets/files/profile/aayushi/profile_pic.jpg" alt="">
+                        <span>About Aayushi</span>
+                        <p class="text-left">
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.
+                        </p>
+                    </div>
+                    <!-- End Profile Picture -->
+                    <div class="side-bar-dp-footer text-left">
+                        <p>
+                            Followers&nbsp;&nbsp;&nbsp;&nbsp;20k
+                            <br>
+                            Following&nbsp;&nbsp;&nbsp;&nbsp;200
+                        </p>
+                    </div>
+                </div>
+                <!-- Left sidebar end -->
+
+            </div>
+            <!-- Left Box End -->
+
+            <!-- Middle box -->
+            <div class="box-2">
+                <!-- Popular Stories -->
+                <div class="pro-cover" style="background-image: url('assets/files/profile/aayushi/profile_cover.jpg');">
+                    <div class="pro-cover-content">
+
+                    </div>
+                </div>
+                <!-- Popular Stories end -->
+                <div class="container">
+                    <div class="row">
+
+
+                    </div>
+
+                    <!-- Post Form -->
+                    <div class="row posts">
+                        <div class="col-12"><label for="post-box">Aayushi's Posts</label></div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="post-form-modal" tabindex="-1" role="dialog"
+                        aria-labelledby="postFormModal" aria-hidden="true">
+                        <div class="modal-dialog ws-modal" role="document">
+                            <div class="modal-content">
+                                <!-- <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> -->
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 ws-modal-header">
+                                                <div class="ws-modal-title">Create Post</div>
+                                                <div class="ws-modal-buttons">
+                                                    <!-- <div class="ws-modal-buttons-body">                                                        
+                                                        <div class="ws-modal-switch-button">
+                                                            <i class="fas fa-circle"></i>
+                                                            <span>Text + Image</span>
+                                                        </div>
+                                                        <div class="ws-modal-switch-button">
+                                                            <i class="fas fa-circle"></i>
+                                                            <span>Image</span>
+                                                        </div>
+                                                        <div class="ws-modal-switch-button">
+                                                            <i class="fas fa-circle"></i>
+                                                            <span>Video</span>
+                                                        </div>
+                                                    </div>                                                     -->
+                                                </div>
+                                            </div>
+                                            <div class="ws-modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <form class="ws-modal-form">
+                                                                <div class="form-group">
+                                                                    <label for="title">Title</label>
+                                                                    <input type="text" class="form-control" id="title"
+                                                                        placeholder="Your title here">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="sharewiththeworld">Share with the
+                                                                        world</label>
+                                                                    <textarea class="form-control"
+                                                                        id="sharewiththeworld" rows="5"></textarea>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-6 text-left">
+                                                                        <select class="custom-select my-1 mr-sm-2"
+                                                                            id="choosecategory">
+                                                                            <option selected>Choose Category</option>
+                                                                            <option value="1">One</option>
+                                                                            <option value="2">Two</option>
+                                                                            <option value="3">Three</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-6 text-right">
+                                                                        <button type="submit"
+                                                                            class="btn btn-primary my-1">Share</button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Form End -->
+
+                    <!-- Current Posts -->
+                    <div class="row current-posts">
+
+                        <div class="col-12 active-posts">
+                            <img class="posts-owner-dp" src="assets/files/profile/profile1.jpg" alt="">
+                            <div class="active-post-content">
+                                <div class="active-post-content-header">
+                                    <div class="info">
+                                        <h5>Bindiya Rani</h5>
+                                        <span>Posted 12mins ago</span>
+                                    </div>
+                                    <div class="three-dots">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="active-post-content-body">
+                                    <p>
+                                        What is Lorem Ipsum?
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five centuries, but also the leap
+                                        into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </div>
+                                <div class="active-post-content-footer">
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <a href="#"><i class="fas fa-comment"></i></a>
+                                    <a href="#"><i class="fas fa-user-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 active-posts">
+                            <img class="posts-owner-dp" src="assets/files/profile/profile1.jpg" alt="">
+                            <div class="active-post-content">
+                                <div class="active-post-content-header">
+                                    <div class="info">
+                                        <h5>Bindiya Rani</h5>
+                                        <span>Posted 12mins ago</span>
+                                    </div>
+                                    <div class="three-dots">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="active-post-content-body">
+                                    <p>
+                                        What is Lorem Ipsum?
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five centuries, but also the leap
+                                        into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </div>
+                                <div class="active-post-content-footer">
+                                    <a href="#" class="liked"><i class="fas fa-heart"></i></a>
+                                    <a href="#"><i class="fas fa-comment"></i></a>
+                                    <a href="#"><i class="fas fa-user-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 active-posts">
+                            <img class="posts-owner-dp" src="assets/files/profile/profile1.jpg" alt="">
+                            <div class="active-post-content">
+                                <div class="active-post-content-header">
+                                    <div class="info">
+                                        <h5>Bindiya Rani</h5>
+                                        <span>Posted 12mins ago</span>
+                                    </div>
+                                    <div class="three-dots">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="active-post-content-body">
+                                    <p>
+                                        What is Lorem Ipsum?
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five centuries, but also the leap
+                                        into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </div>
+                                <div class="active-post-content-footer">
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <a href="#"><i class="fas fa-comment"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 active-posts">
+                            <img class="posts-owner-dp" src="assets/files/profile/profile1.jpg" alt="">
+                            <div class="active-post-content">
+                                <div class="active-post-content-header">
+                                    <div class="info">
+                                        <h5>Bindiya Rani</h5>
+                                        <span>Posted 12mins ago</span>
+                                    </div>
+                                    <div class="three-dots">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="active-post-content-body">
+                                    <img class="content-body-image" src="assets/files/posts/images/p_img2.jpg" alt="">
+                                    <p>
+                                        What is Lorem Ipsum?
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five centuries, but also the leap
+                                        into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </div>
+                                <div class="active-post-content-footer">
+                                    <a href="#" class="liked"><i class="fas fa-heart"></i></a>
+                                    <a href="#"><i class="fas fa-comment"></i></a>
+                                    <a href="#"><i class="fas fa-user-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 active-posts">
+                            <img class="posts-owner-dp" src="assets/files/profile/profile1.jpg" alt="">
+                            <div class="active-post-content">
+                                <div class="active-post-content-header">
+                                    <div class="info">
+                                        <h5>Bindiya Rani</h5>
+                                        <span>Posted 12mins ago</span>
+                                    </div>
+                                    <div class="three-dots">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="active-post-content-body">
+                                    <img class="content-body-image" src="assets/files/posts/images/p_img1.jpg" alt="">
+                                    <p>
+                                        What is Lorem Ipsum?
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five centuries, but also the leap
+                                        into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </div>
+                                <div class="active-post-content-footer">
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <a href="#"><i class="fas fa-comment"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Current Posts End -->
+                </div>
+            </div>
+
+            <!-- Right box -->
+            <div class="box-3">
+
+                <!-- Right sidebar-->
+                <div class="right-side-bar">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-12 right-side-bar-items">
+                                <span class="right-side-bar-items-title">Check what's happening</span>
+                                <div class="section-selection">
+                                    <div class="section-image">
+                                        <img src="assets/files/right_side_bar/arts.jpg" alt="">
+                                        <div class="image-overlay"><i class="fas fa-play-circle"></i></div>
+                                    </div>
+                                    <span>Arts</span>
+                                </div>
+
+                                <div class="section-selection">
+                                    <div class="section-image">
+                                        <img src="assets/files/right_side_bar/travel.jpg" alt="">
+                                        <div class="image-overlay"><i class="fas fa-play-circle"></i></div>
+                                    </div>
+                                    <span>Travel</span>
+                                </div>
+
+                                <div class="section-selection">
+                                    <div class="section-image">
+                                        <img src="assets/files/right_side_bar/technology.jpg" alt="">
+                                        <div class="image-overlay"><i class="fas fa-play-circle"></i></div>
+                                    </div>
+                                    <span>Technology</span>
+                                </div>
+
+                                <a href="#" class="see-more">See more</a>
+                            </div>
+
+                            <div class="col-12 right-side-bar-switch">
+                                <div class="right-side-bar-switch-title">
+                                    <div class="title-dot">
+                                        <div class="title-inner-dot"></div>
+                                    </div>
+                                    Switch to
+                                </div>
+                                <div class="right-side-bar-switch-body">
+                                    <div class="right-side-bar-switch-body-items">
+                                        <ul>
+                                            <li>
+                                                <img src="assets/files/ws-logo-white.png" alt="">
+                                                <span>Text / Text + Image</span>
+                                            </li>
+                                            <li>
+                                                <img src="assets/files/ws-logo-white.png" alt="">
+                                                <span>Image</span>
+                                            </li>
+                                            <li>
+                                                <img src="assets/files/ws-logo-white.png" alt="">
+                                                <span>Video</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Sidebar end -->
+
+            </div>
+            <!-- Right Box End -->
+        </div>
+
+    </div>
+
+    <!-- Side Main Black Box-->
+    <div class="container side-main-box">
+        <div class="row">
+            <div class="col-12 search-button">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="col-12 option-button">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="col-12 toggle-button">
+                <a href="#"><i class="fas fa-toggle-on"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Side Main Black Box End-->
+
+    <!--General Scripts-->
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/thether.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
